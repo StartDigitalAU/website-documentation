@@ -15,15 +15,14 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://docs.startdigital.com',
+  url: 'https://startdigitalau.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: '/website-documentation/',
 
   // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'startdigitalau', // Usually your GitHub org/user name.
-  projectName: 'website-documentation', // Usually your repo name.
+  organizationName: 'startdigitalau', // Your GitHub org/user name.
+  projectName: 'website-documentation', // Your repo name.
+  trailingSlash: false,
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
