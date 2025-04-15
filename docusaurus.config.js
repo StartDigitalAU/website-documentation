@@ -4,66 +4,61 @@
 // There are various equivalent ways to declare your Docusaurus config.
 // See: https://docusaurus.io/docs/api/docusaurus-config
 
-import {themes as prismThemes} from 'prism-react-renderer';
+import { themes as prismThemes } from "prism-react-renderer";
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Start Website Documenation',
-  tagline: '',
-  favicon: 'img/favicon.ico',
+  title: "Start Digital Developer Documentation",
+  tagline: "Website Development Documentation & Guidelines",
+  favicon: "img/favicon.ico",
 
-  // Set the production url of your site here
-  url: 'https://startdigitalau.github.io',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  baseUrl: '/website-documentation/',
+  url: "https://startdigitalau.github.io",
+  baseUrl: "/website-documentation/",
 
   // GitHub pages deployment config.
-  organizationName: 'startdigitalau', // Your GitHub org/user name.
-  projectName: 'website-documentation', // Your repo name.
+  organizationName: "startdigitalau", // Your GitHub org/user name.
+  projectName: "website-documentation", // Your repo name.
   trailingSlash: false,
 
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+  onBrokenLinks: "throw",
+  onBrokenMarkdownLinks: "warn",
 
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: "en",
+    locales: ["en"],
   },
 
   presets: [
     [
-      'classic',
+      "classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: './sidebars.js',
+          sidebarPath: "./sidebars.js",
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
         },
         blog: {
           showReadingTime: true,
           feedOptions: {
-            type: ['rss', 'atom'],
+            type: ["rss", "atom"],
             xslt: true,
           },
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
           // Useful options to enforce blogging best practices
-          onInlineTags: 'warn',
-          onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
+          onInlineTags: "warn",
+          onInlineAuthors: "warn",
+          onUntruncatedBlogPosts: "warn",
         },
         theme: {
-          customCss: './src/css/custom.css',
+          customCss: "./src/css/custom.css",
         },
       }),
     ],
@@ -73,67 +68,78 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      image: "img/start.png",
       navbar: {
-        title: 'My Site',
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          alt: "Start Logo",
+          src: "img/start.png",
         },
         items: [
           {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
-            position: 'left',
-            label: 'Tutorial',
+            type: "docSidebar",
+            sidebarId: "tutorialSidebar",
+            position: "right",
+            label: "Documentation",
           },
           {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
-            position: 'right',
+            href: "https://github.com/startdigitalau",
+            label: "GitHub",
+            position: "right",
           },
         ],
       },
       footer: {
-        style: 'dark',
+        style: "dark",
         links: [
           {
-            title: 'Docs',
+            title: "Documentation",
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: "Websites",
+                to: "/docs/websites",
+              },
+              {
+                label: "Deployment",
+                to: "/docs/deployment",
+              },
+              {
+                label: "Packages",
+                to: "/docs/packages",
               },
             ],
           },
           {
-            title: 'Community',
+            title: "Resources",
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: "Coding Standards",
+                to: "/docs/standards",
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'X',
-                href: 'https://x.com/docusaurus',
+                label: "Tutorials",
+                to: "/docs/tutorials",
               },
             ],
           },
           {
-            title: 'More',
+            title: "Start Digital",
             items: [
               {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                label: "GitHub",
+                href: "https://github.com/startdigitalau",
+              },
+              {
+                label: "Website",
+                href: "https://startdigital.com.au",
+              },
+              {
+                label: "Contact",
+                href: "https://startdigital.com.au/contact",
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Start Digital. Built with Docusaurus.`,
       },
       prism: {
         theme: prismThemes.github,

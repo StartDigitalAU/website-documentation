@@ -1,0 +1,8 @@
+{
+  "label": "Deployment Guides",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "description": "Deployment procedures and hosting configurations."
+  }
+}
