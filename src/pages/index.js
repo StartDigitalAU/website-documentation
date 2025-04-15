@@ -24,13 +24,14 @@ function DocumentationCards() {
     {
       title: "Website Documentation",
       description: "Detailed documentation for all our website projects",
-      to: "/docs/websites",
+      to: "/docs/category/website-projects",
       icon: "🌐",
     },
     {
       title: "Deployment Guides",
-      description: "Step-by-step deployment procedures and hosting configurations",
-      to: "/docs/deployment",
+      description:
+        "Step-by-step deployment procedures and hosting configurations",
+      to: "/docs/category/deployment-guides",
       icon: "🚀",
     },
     {
@@ -42,19 +43,19 @@ function DocumentationCards() {
     {
       title: "Packages & Dependencies",
       description: "Common packages we use and their implementation details",
-      to: "/docs/packages",
+      to: "/docs/category/packages--dependencies",
       icon: "📦",
     },
     {
       title: "Coding Standards",
       description: "Our development standards and best practices",
-      to: "/docs/standards",
+      to: "/docs/category/development-standards",
       icon: "📝",
     },
     {
       title: "Tutorials",
       description: "Step-by-step guides for common development tasks",
-      to: "/docs/tutorials",
+      to: "/docs/category/tutorials",
       icon: "📚",
     },
   ];

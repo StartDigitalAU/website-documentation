@@ -96,15 +96,15 @@ const config = {
             items: [
               {
                 label: "Websites",
-                to: "/docs/websites",
+                to: "/docs/category/website-projects",
               },
               {
                 label: "Deployment",
-                to: "/docs/deployment",
+                to: "/docs/category/deployment-guides",
               },
               {
                 label: "Packages",
-                to: "/docs/packages",
+                to: "/docs/category/packages--dependencies",
               },
             ],
           },
@@ -113,11 +113,11 @@ const config = {
             items: [
               {
                 label: "Coding Standards",
-                to: "/docs/standards",
+                to: "/docs/category/development-standards",
               },
               {
                 label: "Tutorials",
-                to: "/docs/tutorials",
+                to: "/docs/category/tutorials",
               },
             ],
           },
