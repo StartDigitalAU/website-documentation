@@ -1,6 +1,6 @@
 {
-  "label": "Website Projects",
-  "position": 1,
+  "label": "Website Documentation",
+  "position": 4,
   "link": {
     "type": "generated-index",
     "description": "Documentation for our website projects and their architectures."

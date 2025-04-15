@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Website Documentation Template
+# Template
 
 ## Project Overview
 - **Client Name**: 

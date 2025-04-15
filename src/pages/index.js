@@ -24,7 +24,7 @@ function DocumentationCards() {
     {
       title: "Website Documentation",
       description: "Detailed documentation for all our website projects",
-      to: "/docs/category/website-projects",
+      to: "/docs/category/website-documentation",
       icon: "🌐",
     },
     {

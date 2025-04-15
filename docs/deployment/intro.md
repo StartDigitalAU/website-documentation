@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Deployment Overview
+# Deploying to a Development Server
 
 ## Introduction
 This section covers our deployment processes and configurations for various hosting environments.
