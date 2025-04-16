@@ -3,9 +3,16 @@ sidebar_position: 3
 ---
 
 # Understanding Timber
-Timber is essentially a templating engine that splits the HTML and display away from the PHP logic & data. Thus, allowing our PHP files to prepare the data to be added to the timber context to be retrieved & outputted in our TWIG files eg. `<h1>{{ post.title }}</h1>`
+Timber is a templating engine that separates HTML and display logic from PHP logic and data. This allows PHP files to prepare data for the Timber context, which can then be accessed and rendered in TWIG templates, such as `<h1>{{ post.title }}</h1>`.
 
-## Task 1: Create a template to protect pages from non-admin users
+## Getting Started with Timber Tasks
+
+The following tasks will help you understand how to work with Timber templates and the page builder functionality. These exercises cover protecting admin-only pages and creating custom page builder blocks.
+
+For more examples and advanced usage, check out the [Timber Cookbook](https://timber.github.io/docs/v2/integrations/advanced-custom-fields/), which provides detailed recipes and best practices for working with Timber.
+
+
+### Task 1: Create a template to protect pages from non-admin users
 1. Create the files `template-admin-only.php` in the theme root, and `template-admin-only.twig` in `/templates`
 2. In the `template-admin-only.php` ensure you have the following to render out the template:
 
@@ -39,7 +46,7 @@ Timber::render($templates, $context);
 ```
 4. Test & ensure it works when logged in & not logged in
 
-## Task 2: Understanding the page builder blocks
+### Task 2: Understanding the page builder blocks
 
 1. Install ACF Pro & sync the page builder fields JSON
 
@@ -50,8 +57,8 @@ Timber::render($templates, $context);
 4. Within `image_text.twig` create a simple text image 2-column layout & demonstrate retrieving the text & image within twig by using:
 
 ```twig
-<>
+<div>
     <div>{{ block.name_of_wysiwyg_field }}</div>
     <img src="{{ get_image(block.name_of_image_field).src }}" alt="{{ block.name_of_image_field.alt }}" />
-</>
+</div>
 ```

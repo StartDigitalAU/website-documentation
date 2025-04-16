@@ -15,7 +15,9 @@ Before starting, ensure you have:
 - Node.js (v18+) and npm installed
 - Git configured with your credentials
 
-## Step 1: Clone the Boilerplate Theme
+## Getting Started
+
+### Step 1: Clone the Boilerplate Theme
 
 1. Open your terminal
 2. Navigate to your project directory:
@@ -31,7 +33,7 @@ Before starting, ensure you have:
    cd introductorytask
    ```
 
-## Step 2: Install PHP Dependencies
+### Step 2: Install PHP Dependencies
 
 1. Install Composer dependencies:
    ```bash
@@ -39,7 +41,7 @@ Before starting, ensure you have:
    ```
    This will install all required PHP packages, WordPress core files and the theme's node dependencies.
 
-## Step 3: Database Setup
+### Step 3: Database Setup
 
 1. Open TablePlus or your preferred database client
 2. Create a new MySQL database:
@@ -54,13 +56,13 @@ Before starting, ensure you have:
    DB_HOST=localhost
    ```
 
-## Step 4: Configure Security Keys
+### Step 4: Configure Security Keys
 
 1. Visit the [Roots Salts Generator](https://roots.io/salts.html)
 2. Copy the generated security keys
 3. Paste them into your .env file, replacing the placeholder values
 
-## Step 5: WordPress Installation
+### Step 5: WordPress Installation
 
 1. Start your local server using Laravel Herd
 2. Open your browser and navigate to:
@@ -73,7 +75,7 @@ Before starting, ensure you have:
    - Password: Generate a strong password
    - Email: Your work email address
 
-## Step 6: Start Development Server
+### Step 6: Start Development Server
 
 1. Navigate to the theme directory:
    ```bash
@@ -89,7 +91,7 @@ Before starting, ensure you have:
    ```
    This will compile assets and watch for changes.
 
-## Step 7: Set Up Version Control
+### Step 7: Set Up Version Control
 
 1. Create a new GitHub repository
 2. Update the remote URL:
@@ -109,5 +111,5 @@ Before starting, ensure you have:
 ## Boilerroom npx Command
 Now in the future you can create a new project & database by running the following command in your terminal:
 ```bash
-npx npx create-boilerroom-app <project-name>
+npx create-boilerroom-app <project-name>
 ```

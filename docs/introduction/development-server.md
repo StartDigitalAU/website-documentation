@@ -4,26 +4,44 @@ sidebar_position: 4
 
 # Pushing to a Development Server
 
-1. Login to [ventraip](https://ventraip.com.au/) & navigate to the cpanel for `perth.agency`
+This guide walks through the process of setting up a development server environment using VentraIP, configuring DNS with Cloudflare, and establishing automated deployments with GitHub Actions.
 
-2. Create a new domain eg. `intro.startdigital.com.au`, untick `Share document root` and change the document root to something simple like `intro`
+1. **Login to VentraIP**:
+   - Access [VentraIP](https://ventraip.com.au/) and navigate to the cPanel for `perth.agency`.
 
-3. Login to cloudflare, navigate to the DNS for startdigital.com.au & create an A record that points to the servers IP address, ensure the name is the same as the domain created within cpanel
+2. **Create a New Domain**:
+   - In cPanel, create a new domain, e.g., `intro.startdigital.com.au`.
+   - Untick `Share document root` and set the document root to a simple name like `intro`.
 
-4. Go in to `MySQL® Databases` within cpanel and create a new database, database user & add that user to the database
+3. **Configure DNS in Cloudflare**:
+   - Log in to Cloudflare and navigate to the DNS settings for startdigital.com.au.
+   - Create an A record that points to the server's IP address. Ensure the name matches the domain created within cPanel.
 
-5. Go in to the `File Manager` within cpanel and find the `intro` folder and extract the [wordpress core](https://wordpress.org/download/) within the folder
+4. **Set Up MySQL Database**:
+   - In cPanel, go to `MySQL® Databases`.
+   - Create a new database, a database user, and add the user to the database.
 
-6. Navigate to the domain eg. `intro.startdigital.com.au` and set up wordpress as per normal
+5. **Upload WordPress Core**:
+   - Access the `File Manager` in cPanel, find the `intro` folder, and extract the [WordPress core](https://wordpress.org/download/) within the folder.
 
-7. Install the plugin WP Migrate on both the local site and development site
+6. **Install WordPress**:
+   - Navigate to the domain, e.g., `intro.startdigital.com.au`, and proceed with the standard WordPress setup.
 
-8. Click Migrate, Find & Replace 'http://' with 'https://'
+7. **Install WP Migrate Plugin**:
+   - Install the WP Migrate plugin on both the local site and the development site.
 
-9. Select all besides themes and migrate across
+8. **Migrate Content**:
+   - Click Migrate, and create a find and replace rule for 'http://' with 'https://'.
+   - Select all options except themes and proceed with the migration.
 
-10. Edit the `deploy.yaml` Within your `.github/workflows`, by changing the server-dir to the domain document root we created before eg `intro/`
+9. **Edit GitHub Workflow**:
+   - Modify the `deploy.yaml` file within your `.github/workflows` directory.
+   - Change the `server-dir` to the domain document root created earlier, e.g., `intro/`.
 
-11. Within ventraip click manage on the `perth.agency` and find the username and password, enter the username in to the `deploy.yaml` and then in the girhub repo, go to settings > Secrets & Variables > Repository Secret & create a `DEV_FTP_PASS` secret containing the ftps password
+10. **Configure FTP Credentials**:
+    - In VentraIP, click manage on `perth.agency` to find the username and password.
+    - Enter the username into the `deploy.yaml`.
+    - In the GitHub repository, go to Settings > Secrets & Variables > Repository Secret, and create a `DEV_FTP_PASS` secret containing the FTP password.
 
-12. Push the changes to github and monitor the action to see if it built on the server
+11. **Deploy Changes**:
+    - Push the changes to GitHub and monitor the GitHub Actions to ensure the deployment is successful on the server.

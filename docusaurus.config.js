@@ -85,10 +85,6 @@ const config = {
                 label: "Deployment",
                 to: "/docs/category/deployment-guides",
               },
-              {
-                label: "Packages",
-                to: "/docs/category/packages--dependencies",
-              },
             ],
           },
           {
@@ -96,11 +92,7 @@ const config = {
             items: [
               {
                 label: "Coding Standards",
-                to: "/docs/category/development-standards",
-              },
-              {
-                label: "Tutorials",
-                to: "/docs/category/tutorials",
+                to: "/docs/theme/development-standards",
               },
             ],
           },
