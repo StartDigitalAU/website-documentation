@@ -29,6 +29,11 @@ startdigital/
 │   ├── postcss.config.cjs    # PostCSS configuration
 │   └── tailwind.config.cjs   # Tailwind CSS configuration
 │
+├── CI / CD & Deployment
+│   └── .github/              # GitHub Actions workflows
+│       └── workflows/        # GitHub Actions workflows
+│           └── deploy.yaml   # GitHub Actions workflow for deployment
+│
 ├── Assets
 │   ├── css/                  #  Development CSS stylesheets
 │   │   └── ...
