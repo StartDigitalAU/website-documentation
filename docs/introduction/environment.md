@@ -33,6 +33,8 @@ cd ~/Developer
 - [Laravel Herd](https://herd.laravel.com/) : Install Herd
   - Configure PHP versions (8.1+ recommended)
   - Ensure the memory setting is updated to -1mb and upload to 256mb
+- [MySQL Community Server](https://dev.mysql.com/downloads/mysql/) : Download & install MySQL  
+  - Run the installer and note your root credentials (host, port, user, password)  
 
 ### 3. Database Management
 
