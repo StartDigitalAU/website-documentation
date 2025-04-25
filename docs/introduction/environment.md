@@ -32,6 +32,7 @@ cd ~/Developer
 
 - [Laravel Herd](https://herd.laravel.com/) : Install Herd
   - Configure PHP versions (8.1+ recommended)
+  - Ensure the memory setting is updated to -1mb and upload to 256mb
 
 ### 3. Database Management
 
