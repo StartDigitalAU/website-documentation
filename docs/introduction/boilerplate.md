@@ -11,6 +11,7 @@ This guide will walk you through setting up our WordPress boilerplate theme for 
 Before starting, ensure you have:
 
 - Laravel Herd installed and running
+- Ensure the Laravel Herd settings are configure with Memory to -1 and Upload to 256mb
 - Composer installed globally
 - Node.js (v18+) and npm installed
 - Git configured with your credentials
