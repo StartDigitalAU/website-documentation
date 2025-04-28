@@ -54,5 +54,5 @@ cd ~/Developer
 - Install essential tools:
 
   ```bash
-  brew install git node@18 yarn composer
+  brew install git node@18 yarn composer wp-cli
   ```
